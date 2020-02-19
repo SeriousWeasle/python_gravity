@@ -52,7 +52,7 @@ settings = {
 }
 
 scene = particles.scene(settings)
-for i in tqdm(range(1000), desc="Rendering frames"):
+for i in tqdm(range(25000), desc="Rendering frames"):
     scene.render()
     scene.tick()
 print("Making GIF, this may take a while depending on frame size and count")
